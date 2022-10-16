@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="item1">Historial</string>
+    <string name="item2">Niveles de gas</string>
+    <string name="item3">Notificaciones</string>
+    <string name="gas">000 PPM</string>
+    <string name="distancia">0 M</string>
+    <string name="detener">d</string>
+    <string name="arriba">a</string>
+    <string name="abajo">ab</string>
+    <string name="izquierda">i</string>
+    <string name="conexion">c</string>
+    <string name="derecha">de</string>
+    <string name="n1">008</string>
+    <string name="n2">26,5</string>
+    <string name="n3">...</string>
+    <string name="min">MINIMO</string>
+    <string name="max">MÁXIMO</string>
+    <string name="p">PROMEDIO</string>
+    <string name="hora2">Hora</string>
+    <string name="niveles2">Niveles de gas</string>
+    <string name="distancia2">Distancia</string>
+    <string name="a1">13:00 pm</string>
+    <string name="a2">34,6..</string>
+    <string name="a3">18 m</string>
+    <string name="a4">12:00 pm</string>
+    <string name="a5">3,4</string>
+    <string name="a6">2 m</string>
+    <string name="a7">7 am</string>
+    <string name="a8">20</string>
+    <string name="a9">8 m</string>
+    <string name="noti3">Notificaciones</string>
+
+
+</resources>
