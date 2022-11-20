@@ -25,9 +25,9 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-    //FirebaseDatabase database;
-    //DatabaseReference dbReference;
-   // ArrayList<Parametros> Parametros;
+    FirebaseDatabase database;
+    DatabaseReference dbReference;
+    ArrayList<Parametros> Parametros;
     //ArrayList<Notificacion> notificacion;
     //ArrayList<Historial> Historial;
     //TextView textView;
@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //textView = findViewById(R.id.textView);
-        //database = FirebaseDatabase.getInstance();
-        //dbReference = database.getReference("Parametros");
+        database = FirebaseDatabase.getInstance();
+        dbReference = database.getReference("Parametros");
         //dbReference.addValueEventListener(new ValueEventListener() {
            //* @Override
         //public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -59,11 +59,11 @@ public class MainActivity extends AppCompatActivity {
     // public void onCancelled(@NonNull DatabaseError error) {
     //   }
     // });
-     // dbReference.child("ppm").setValue("");
-      //dbReference.child("dista").setValue("");
-      //dbReference.child("tmax").setValue(0);
-      //dbReference.child("tmin").setValue(100);
-      //dbReference.child("promedio").setValue(0);
+        dbReference.child("distancia").setValue("0");
+        dbReference.child("niveles").setValue("00");
+        dbReference.child("tmax").setValue(0);
+        dbReference.child("tmin").setValue(100);
+        dbReference.child("promedio").setValue("");
        // dbReference = database.getReference("notificacion");
 
 
