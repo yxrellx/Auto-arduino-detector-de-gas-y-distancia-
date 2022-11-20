@@ -12,10 +12,26 @@ import android.view.MenuItem;
 
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
+    //FirebaseDatabase database;
+    //DatabaseReference dbReference;
+   // ArrayList<Parametros> Parametros;
+    //ArrayList<Notificacion> notificacion;
+    //ArrayList<Historial> Historial;
+    //TextView textView;
+
 
     ImageButton arriba;
     ImageButton abajo;
@@ -29,6 +45,30 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //textView = findViewById(R.id.textView);
+        //database = FirebaseDatabase.getInstance();
+        //dbReference = database.getReference("Parametros");
+        //dbReference.addValueEventListener(new ValueEventListener() {
+           //* @Override
+        //public void onDataChange(@NonNull DataSnapshot snapshot) {
+        // String m= snapshot .getValue(String.class);
+        // textView.setText(m);
+           // }
+    // @Override
+    // public void onCancelled(@NonNull DatabaseError error) {
+    //   }
+    // });
+     // dbReference.child("ppm").setValue("");
+      //dbReference.child("dista").setValue("");
+      //dbReference.child("tmax").setValue(0);
+      //dbReference.child("tmin").setValue(100);
+      //dbReference.child("promedio").setValue(0);
+       // dbReference = database.getReference("notificacion");
+
+
+
+
         arriba = (ImageButton) findViewById(R.id.arriba);
         abajo = (ImageButton) findViewById(R.id.abajo);
         derecha = (ImageButton) findViewById(R.id.derecha);

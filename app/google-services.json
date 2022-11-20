@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "371303032223",
+    "project_id": "arduino-dc7ca",
+    "storage_bucket": "arduino-dc7ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371303032223:android:bcad56395eb4b8933989aa",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371303032223-o2un0kpob71kf9qkenopqems2o0cf032.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuL5DM6ptk6S2XWqc_N4EQaneW2fNV8ZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371303032223-o2un0kpob71kf9qkenopqems2o0cf032.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
