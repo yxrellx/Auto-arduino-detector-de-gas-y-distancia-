@@ -11,7 +11,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,12 +28,6 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-    FirebaseDatabase database;
-    DatabaseReference dbReference;
-    ArrayList<Parametros> Parametros;
-    //ArrayList<Notificacion> notificacion;
-    //ArrayList<Historial> Historial;
-    //TextView textView;
 
 
     ImageButton arriba;
@@ -46,25 +43,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //textView = findViewById(R.id.textView);
-        database = FirebaseDatabase.getInstance();
-        dbReference = database.getReference("Parametros");
-        //dbReference.addValueEventListener(new ValueEventListener() {
-           //* @Override
-        //public void onDataChange(@NonNull DataSnapshot snapshot) {
-        // String m= snapshot .getValue(String.class);
-        // textView.setText(m);
-           // }
-    // @Override
-    // public void onCancelled(@NonNull DatabaseError error) {
-    //   }
-    // });
-        dbReference.child("distancia").setValue("0");
-        dbReference.child("niveles").setValue("00");
-        dbReference.child("tmax").setValue(0);
-        dbReference.child("tmin").setValue(100);
-        dbReference.child("promedio").setValue("");
-       // dbReference = database.getReference("notificacion");
+
+
+
 
 
 
