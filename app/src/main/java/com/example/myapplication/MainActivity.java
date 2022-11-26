@@ -9,12 +9,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,10 +20,21 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
-
 
 public class MainActivity extends AppCompatActivity {
+    private TextView etGas;
+    private TextView etDistancia2;
+    private DatabaseReference mDatabase;
+
+
+
+
+
+
+
+
+
+
 
 
     ImageButton arriba;
@@ -42,6 +49,35 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        etGas = (TextView) findViewById(R.id.gas);
+        etDistancia2 = (TextView) findViewById(R.id.distancia2);
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mDatabase.child("Parametros").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()) {
+                    String gas = snapshot.child("gas").getValue().toString();
+                    String distancia2 = snapshot.child("distancia2").getValue().toString();
+                    System.out.println("GAS" + gas);
+                    etGas.setText(gas+" PPM");
+                    System.out.println("Distancia");
+                    etDistancia2.setText(distancia2+" M");
+
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+
+
+
 
 
 
@@ -113,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         if(id==R.id.item1){
             Toast.makeText(this,"clic Historial",Toast.LENGTH_SHORT).show();
-            Intent i = new Intent(this, Pag2.class);
+            Intent i = new Intent(this, userList.class);
             startActivity(i);
         }else if(id==R.id.item2) {
             Toast.makeText(this, "clic Niveles", Toast.LENGTH_SHORT).show();
@@ -121,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         }
         else if(id==R.id.item3) {
-            Toast.makeText(this, "clic Notificacion", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "clic notificacion", Toast.LENGTH_SHORT).show();
             Intent i = new Intent(this, Pag4.class);
             startActivity(i);
         }

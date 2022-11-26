@@ -1,29 +1,19 @@
 package com.example.myapplication;
 
 public class Historial {
-    public String id;
-    public String hora;
-    public int distancia;
-    public int niveles;
+    String hora;
+    String niveles;
+    String distancia;
 
-    public Historial() {
-
+    public String getHora() {
+        return hora;
     }
 
-    public Historial(String id, String hora, int distancia, int niveles) {
-        this.id = id;
-        this.hora = hora;
-        this.distancia = distancia;
-        this.niveles = niveles;
+    public String getNiveles() {
+        return niveles;
     }
 
-    @Override
-    public String toString() {
-        return "dffc{" +
-                "id='" + id + '\'' +
-                ", hora='" + hora+ '\'' +
-                ", niveles='" + niveles + '\'' +
-                ", distancia='" + distancia + '\'' +
-                '}';
+    public String getDistancia() {
+        return distancia;
     }
 }

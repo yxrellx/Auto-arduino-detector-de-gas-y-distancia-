@@ -13,8 +13,8 @@
     <string name="conexion">c</string>
     <string name="derecha">de</string>
     <string name="n1">008</string>
-    <string name="n2">26,5</string>
-    <string name="n3">...</string>
+    <string name="n2">260</string>
+    <string name="n3">200</string>
     <string name="min">MINIMO</string>
     <string name="max">MÁXIMO</string>
     <string name="p">PROMEDIO</string>

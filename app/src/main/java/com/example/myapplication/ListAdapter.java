@@ -55,7 +55,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
 
         void bindData(final ListElement item) {
-            iconImg.setColorFilter(Color.parseColor(item.getColor()), PorterDuff.Mode.SRC_IN);
+            iconImg.setColorFilter(Color.parseColor("#FFFFFF"), PorterDuff.Mode.SRC_IN);
             texto.setText(item.getTexto());
             hora.setText(item.getHora());
             alerta.setText(item.getAlerta());
